@@ -26,12 +26,14 @@ const LeftRegistMap: LeftRegistComponentMapItem[] = [
 		component: 'div',
 		imgCustom: <MyIcon type="icon-demobox" style={{ fontSize: '50px' }} />,
 		displayName: '盒子',
+		urlFn: () => import('./registComponents/basic/container'),
 	},
 	{
 		type: 'basic',
-		component: 'span',
+		component: 'div',
 		imgCustom: <MyIcon type="icon-editor-text" style={{ fontSize: '50px' }} />,
 		displayName: '文字',
+		urlFn: () => import('./registComponents/basic/text'),
 	},
 	{
 		type: 'basic',
