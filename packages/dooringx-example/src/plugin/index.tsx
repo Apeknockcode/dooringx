@@ -38,6 +38,7 @@ const LeftRegistMap: LeftRegistComponentMapItem[] = [
 		component: 'image',
 		imgCustom: <MyIcon type="icon-tupian" style={{ fontSize: '50px' }} />,
 		displayName: '图片',
+		urlFn: () => import('./registComponents/basic/image'),
 	},
 	{
 		type: 'basic',
@@ -45,14 +46,14 @@ const LeftRegistMap: LeftRegistComponentMapItem[] = [
 		img: 'icon-anniu',
 		imgCustom: <MyIcon type="icon-anniu" style={{ fontSize: '50px' }} />,
 		displayName: '按钮',
-		urlFn: () => import('./registComponents/button'),
+		urlFn: () => import('./registComponents/basic/button'),
 	},
 	{
 		type: 'basic',
 		component: 'input',
 		imgCustom: <MyIcon type="icon-shurukuang" style={{ fontSize: '50px' }} />,
 		displayName: '输入框',
-		urlFn: () => import('./registComponents/inputCo'),
+		urlFn: () => import('./registComponents/basic/inputCo'),
 	},
 ];
 

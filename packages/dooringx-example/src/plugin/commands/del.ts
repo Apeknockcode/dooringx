@@ -7,10 +7,12 @@ const del = new CommanderItemFactory(
 	'',
 	(store) => {
 		const clonedata: IStoreData = deepcopy(store.getData());
+		console.log(clonedata);
 		debugger;
-		clonedata.block.forEach((v) => {
+		clonedata.block.forEach((v, i) => {
+			// 焦距
 			if (v.focus) {
-				v.canSee = false;
+				clonedata.block.splice(i, 1);
 			}
 		});
 		store.setData(clonedata);
